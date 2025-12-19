@@ -4,14 +4,14 @@ import { Playfair_Display, Barlow } from "next/font/google";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "900"],
   display: "swap",
   variable: "--font-playfair-next",
 });
 
 const barlow = Barlow({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "900"],
   display: "swap",
   variable: "--font-barlow-next",
 });

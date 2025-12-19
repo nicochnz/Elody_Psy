@@ -25,7 +25,7 @@ export default function Header() {
             />
           </figure>
           <div className="flex flex-col">
-            <h1 className="text-lg md:text-2xl font-bold uppercase text-black-custom leading-tight">
+            <h1 className="text-lg md:text-2xl font-black uppercase text-black-custom">
               Psychopraticienne
             </h1>
             <p className="text-[10px] md:text-[13px] font-barlow text-black-custom/80 tracking-widest uppercase">
@@ -36,7 +36,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-16">
           <nav>
-            <ul className="flex gap-8 font-barlow text-[17px] font-semibold text-black-custom">
+            <ul className="flex gap-8 font-barlow text-xl font-medium text-black-custom">
               <li>
                 <Link href="/" className="hover:text-secondary transition-colors">Accueil</Link>
               </li>
@@ -57,7 +57,7 @@ export default function Header() {
           
           <Link 
             href="/pages/contact" 
-            className="bg-secondary text-white px-8 py-3 rounded-[40px] font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
+            className="bg-secondary text-white px-8 py-5 rounded-4xl font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
           >
             Réserver en ligne
           </Link>

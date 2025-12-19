@@ -2,31 +2,66 @@
 import Image from "next/image";
 export default function Homepage () {
   return ( 
-    <main className="">
+    <main>
       <section className="bg-primary w-full h-[500px]">
-        <div className="flex w-full h-full items-center justify-between">
+        <div className="flex w-full h-full items-center justify-between px-30">
           <div className="flex flex-col gap-4 flex-1 max-w-xl pl-8">
-            <h1 className="text-2xl font-bold uppercase text-secondary">Psychopraticienne</h1>
-            <p className="text-[10px] md:text-[13px] font-barlow text-black-custom/80 tracking-widest uppercase">
-              Neurosciences <span className="text-secondary">•</span> Emotion <span className="text-secondary">•</span> Créativité
+            <h1 className="text-3xl font-black uppercase text-secondary">Psychopraticienne</h1>
+            <p className="text-xl font-barlow text-black-custom font-bold ">
+              Neurosciences Émotion Créativité
             </p>
-            <p>
+            <p className="w-1xl">
               Quand le cerveau, le corps et les émotions s’accordent,
-              tout redevient plus clair. <span className="font-bold">J’accompagne les personnes en burnout, surchargées,
+              tout redevient plus clair.<br></br> <span className="font-bold">J’accompagne les personnes en burnout, surchargées,
               sensibles, TDAH ou neuro-atypiques</span> à comprendre leur
               fonctionnement grâce aux neurosciences, à la psychologie et à la régulation émotionnelle.
             </p>
+            <button className="bg-secondary text-white  w-1/3 py-5 rounded-4xl font-barlow text-lg font-bold hover:bg-secondary/90 transition-all  active:scale-95 cursor-pointer">
+            Réserver en ligne
+          </button>
+          <button  className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-1/3 py-5 rounded-4xl font-barlow text-lg font-bold  transition-all active:scale-95 cursor-pointer">Appel découverte</button>
           </div>
           <div className="pr-12">
             <Image
               src="/test_home.jpg"
               alt="Logo Elody"
               width={300}
-              height={300}
-              className="rounded-lg"
+              height={300
+              }
+              className="rounded-lg w-[500px] h-[450px] object-cover"
             />
           </div>
         </div>
       </section>
+      <div className="w-full">
+
+      <section className="m-15 mx-15 bg-primary rounded-lg grid grid-cols-3">
+        <div className="relative col-span-1">
+        <Image src="/test_home.jpg" alt="Logo Elody" fill className="rounded-l-lg aspect-3/2 object-cover" />
+        </div>
+        <div className="flex flex-col gap-4 col-span-2 mx-auto px-20">
+        <h1 className="text-3xl font-black uppercase text-secondary py-8">
+          Explication d&apos;une séance</h1>
+          <p className="">Chaque séance individuelle s&apos;inscrit dans une démarche psychothérapeutique
+          intégrative, fondée sur les neurosciences, la psychologie et les thérapies cognitivo
+          comportementales (TCC). 
+          <span className="font-bold">J’accompagne les profils sensibles, TDAH ou neuro-
+          atypiques à comprendre en profondeur leurs schémas mentaux et émotionnels, à
+          apaiser leur système nerveux et à retrouver un sentiment d’équilibre durable.</span>
+          </p>
+          <p className="">Mon approche associe psychoéducation, régulation émotionnelle et restructuration
+           cognitive pour t’aider à reprendre le contrôle de ton énergie mentale et mieux
+          naviguer tes émotions au quotidien. C’est un espace de recentrage et d’ajustement,
+          sans jugement ni performance, où la compréhension de soi devient un véritable
+          levier de transformation intérieure.</p>
+          <div className="flex gap-4 py-8">
+          <button className="bg-secondary text-white  w-1/3 py-5 rounded-4xl font-barlow text-lg font-bold hover:bg-secondary/90 transition-all  active:scale-95 cursor-pointer">
+            Réserver en ligne
+          </button>
+          <button  className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-1/3 py-5 rounded-4xl font-barlow text-lg font-bold  transition-all active:scale-95 cursor-pointer">Appel découverte</button>
+          </div>
+          </div>
+      </section>
+      </div>
     </main>
   )}
