@@ -57,7 +57,7 @@ export default function Header() {
           
           <Link 
             href="/pages/contact" 
-            className="bg-secondary text-white px-8 py-5 rounded-4xl font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
+            className="bg-secondary text-white px-8 py-5 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
           >
             Réserver en ligne
           </Link>
