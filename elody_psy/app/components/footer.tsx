@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,16 +8,26 @@ export default function Footer() {
         <div className="flex flex-col gap-4 flex-1 w-full">
           <h3 className="text-3xl md:text-4xl font-playfair font-black text-white">Présentation</h3>
           <ul className="font-barlow text-white space-y-2">
-            <li>Qui suis-je ?</li>
-            <li>Dans quels cas consulter ?</li>
-            <li>Mon approche</li>
+            <li>
+              <Link href="/pages/presentation" className="hover:underline transition-all">Qui suis-je ?</Link>
+            </li>
+            <li>
+              <Link href="/pages/presentation" className="hover:underline transition-all">Dans quels cas consulter ?</Link>
+            </li>
+            <li>
+              <Link href="/pages/presentation" className="hover:underline transition-all">Mon approche</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-4 flex-1 w-full">
           <h3 className="text-3xl md:text-4xl font-playfair font-black text-white">À propos</h3>
           <ul className="font-barlow text-white space-y-2">
-            <li>Tarifs</li>
-            <li>Mentions légales</li>
+            <li>
+              <Link href="/pages/tarifs" className="hover:underline transition-all">Tarifs</Link>
+            </li>
+            <li>
+              <Link href="/pages/contact" className="hover:underline transition-all">Mentions légales</Link>
+            </li>
             <li className="flex md:justify-start gap-2">
               <svg 
                 width="20" 
@@ -35,24 +46,28 @@ export default function Footer() {
           <h3 className="text-3xl md:text-4xl font-playfair font-black text-white">Mes réseaux</h3>
           <ul className="font-barlow text-white space-y-2">
             <li className="flex md:justify-start gap-2 items-center">
-              <Image 
-                src="/insta.png" 
-                alt="Instagram" 
-                width={20} 
-                height={20} 
-                className="w-5 h-5 shrink-0 object-contain"
-              />
-              <span className="pl-1">Instagram</span>
+              <Link href="#" className="flex items-center gap-2 hover:underline transition-all">
+                <Image 
+                  src="/insta.png" 
+                  alt="Instagram" 
+                  width={20} 
+                  height={20} 
+                  className="w-5 h-5 shrink-0 object-contain"
+                />
+                <span className="pl-1 text-white">Instagram</span>
+              </Link>
             </li>
             <li className="flex md:justify-start gap-2 items-center">
-              <Image 
-                src="/podcast.png" 
-                alt="Mes podcasts" 
-                width={20} 
-                height={20} 
-                className="w-5 h-5 shrink-0 object-contain"
-              />
-              <span className="pl-1">Mes podcasts</span>
+              <Link href="#" className="flex items-center gap-2 hover:underline transition-all">
+                <Image 
+                  src="/podcast.png" 
+                  alt="Mes podcasts" 
+                  width={20} 
+                  height={20} 
+                  className="w-5 h-5 shrink-0 object-contain"
+                />
+                <span className="pl-1 text-white">Mes podcasts</span>
+              </Link>
             </li>
           </ul>
         </div>

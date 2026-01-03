@@ -84,7 +84,7 @@ export default function Header() {
               <Link href="/pages/presentation" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Présentation</Link>
             </li>
             <li>
-              <Link href="/pages/articles" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Articles</Link>
+              <Link href="/pages/blog" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Articles</Link>
             </li>
             <li>
               <Link href="/pages/tarifs" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Tarifs</Link>

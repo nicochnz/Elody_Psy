@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Homepage() {
   return (
@@ -30,12 +31,18 @@ export default function Homepage() {
                 fonctionnement grâce aux neurosciences, à la psychologie et à la régulation émotionnelle.
               </p>
               <div className="flex flex-col gap-4 w-full items-center md:items-start">
-                <button className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
+                <Link 
+                  href="/pages/contact"
+                  className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+                >
                   Réserver en ligne
-                </button>
-                <button className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
+                </Link>
+                <Link 
+                  href="/pages/contact"
+                  className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+                >
                   Appel découverte
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -61,19 +68,19 @@ export default function Homepage() {
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col gap-4 col-span-1 md:col-span-2 mx-auto px-6 md:px-20 py-8 md:py-12">
-            <h1 className="text-3xl font-black text-secondary md:py-4 text-center md:text-left">
+          <div className="flex flex-col gap-4 text-left col-span-1 md:col-span-2 mx-auto px-6 md:px-20 py-8 md:py-12">
+            <h1 className="text-3xl text-left font-black text-secondary md:py-4 md:text-left">
               Explication d&apos;une séance
             </h1>
-            <p className="text-justify md:text-left">
+            <p className="md:text-left">
               Chaque séance individuelle s&apos;inscrit dans une démarche psychothérapeutique
               intégrative, fondée sur les neurosciences, la psychologie et les thérapies cognitivo
-              comportementales (TCC).
+              comportementales (TCC).<br></br>
               <span className="font-bold">J&apos;accompagne les profils sensibles, TDAH ou neuro-
               atypiques à comprendre en profondeur leurs schémas mentaux et émotionnels, à
               apaiser leur système nerveux et à retrouver un sentiment d&apos;équilibre durable.</span>
             </p>
-            <p className="text-justify md:text-left">
+            <p className=" md:text-left">
               Mon approche associe psychoéducation, régulation émotionnelle et restructuration
               cognitive pour t&apos;aider à reprendre le contrôle de ton énergie mentale et mieux
               naviguer tes émotions au quotidien. C&apos;est un espace de recentrage et d&apos;ajustement,
@@ -81,13 +88,18 @@ export default function Homepage() {
               levier de transformation intérieure.
             </p>
             <div className="flex flex-col items-center md:items-start md:flex-row gap-4 pt-6">
-              <button className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
+              <Link 
+                href="/pages/contact"
+                className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+              >
                 Réserver en ligne
-              </button>
-              <button className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-8 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
-                <span className="md:hidden">Appel découverte</span>
-                <span className="hidden md:inline">En savoir plus</span>
-              </button>
+              </Link>
+              <Link 
+                href="/pages/presentation"
+                className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-8 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+              >
+                En savoir plus
+              </Link>
             </div>
           </div>
         </section>
@@ -106,12 +118,18 @@ export default function Homepage() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center px-4">
-          <button className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
+          <Link 
+            href="/pages/contact"
+            className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+          >
             Réserver en ligne
-          </button>
-          <button className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-8 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
+          </Link>
+          <Link 
+            href="/pages/tarifs"
+            className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-8 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
+          >
             En savoir plus
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -125,9 +143,12 @@ export default function Homepage() {
             <p className="text-lg text-black-custom max-w-xl text-justify md:text-left">
               Cette expérience m&apos;a permis de comprendre en profondeur le fonctionnement du corps, la rigueur du diagnostic, et la complexité du lien entre la santé physique et l&apos;état psychique.
             </p>
-            <button className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center mt-4">
+            <Link 
+              href="/pages/presentation"
+              className="bg-secondary text-white w-[202px] h-[62px] md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center mt-4"
+            >
               En savoir plus
-            </button>
+            </Link>
           </div>
           <div className="order-1 md:order-2 mb-8 md:mb-0">
             <Image
