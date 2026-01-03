@@ -3,35 +3,46 @@ import Image from "next/image";
 export default function Homepage () {
   return ( 
     <main>
-      <section className="bg-primary w-full h-[600px]">
-        <div className="flex w-full h-full items-center justify-between px-36">
-          <div className="flex flex-col flex-1 max-w-xl">
-            <div className="max-w-md">
-            <h1 className="text-4xl font-black uppercase text-secondary">Psychopraticienne</h1>
-            <p className="text-xl font-barlow text-black-custom font-bold">
-              Neurosciences <span className="mx-2"></span>Émotion <span className="mx-2"></span>Créativité
+      <section className="bg-primary w-full h-auto md:h-[600px] py-8 md:py-0">
+        <div className="flex flex-col md:flex-row w-full h-full items-start md:items-center justify-center md:justify-between px-6 md:px-36 gap-6 md:gap-0">
+          <div className="flex justify-center w-full md:hidden mb-4">
+            <Image
+              src="/first_home.png"
+              alt="Logo Elody"
+              width={260}
+              height={260}
+              className="rounded-full w-[260px] aspect-square object-cover"
+            />
+          </div>
+          <div className="flex flex-col flex-1 max-w-xl items-center md:items-start text-center md:text-left w-full md:w-auto px-4 md:px-0">
+            <div className="w-full max-w-[340px] md:max-w-md">
+            <h1 className="text-3xl md:text-4xl font-black uppercase text-secondary text-center md:text-left leading-tight">
+              Psychopraticienne
+            </h1>
+            <p className="text-lg md:text-xl font-barlow text-black-custom font-bold mt-2 text-center md:text-left">
+              Neurosciences <span className="mx-2">•</span>Émotion <span className="mx-2">•</span>Créativité
             </p>
-            <p className="py-8 w-1xl">
+            <p className="py-6 md:py-8 w-full text-justify md:text-left">
               Quand le cerveau, le corps et les émotions s&apos;accordent,
               tout redevient plus clair.<br></br> <span className="font-bold">J&apos;accompagne les personnes en burnout, surchargées,
               sensibles, TDAH ou neuro-atypiques</span> à comprendre leur
               fonctionnement grâce aux neurosciences, à la psychologie et à la régulation émotionnelle.
             </p>
-            <div className="flex flex-col gap-4">
-            <button className="bg-secondary text-white w-fit px-6 py-6 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer">
+            <div className="flex flex-col gap-4 w-full items-center md:items-start">
+            <button className="bg-secondary text-white w-[202px] h-[62px] px-6 py-6 md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold hover:bg-secondary/90 transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">
             Réserver en ligne
           </button>
-          <button  className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-fit px-6 py-6 rounded-full font-barlow text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer">Appel découverte</button>
+          <button  className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] px-6 py-6 md:w-fit md:h-auto md:px-6 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center">Appel découverte</button>
           </div>
           </div>
           </div>
-          <div className="">
+          <div className="hidden md:block">
             <Image
               src="/first_home.png"
               alt="Logo Elody"
               width={300}
-              height={300}
-              className="rounded-lg w-lg h-[400px] object-cover"
+              height={400}
+              className="rounded-lg w-[520px] h-[400px] object-cover"
             />
           </div>
         </div>
