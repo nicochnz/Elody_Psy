@@ -9,7 +9,7 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-colors duration-300">
+    <header className="sticky top-0 z-50 w-full transition-colors duration-300 shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
       <div className="flex justify-between items-center px-6 md:px-12 py-4 md:py-6 bg-primary md:bg-white-custom">
         <div className="flex items-center gap-3 md:gap-5">
           <figure className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center bg-white border border-primary/20 shadow-sm shrink-0">
