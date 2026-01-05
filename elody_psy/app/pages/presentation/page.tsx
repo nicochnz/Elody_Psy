@@ -7,7 +7,7 @@ export default function Presentation() {
   return (
     <div>
       <Header/>
-      <section className="bg-primary">
+      <section className="bg-primary py-12">
         <h1 className="text-3xl font-black text-secondary py-8 text-center uppercase">À propos de moi</h1>
         <Image src="/third_home.png" alt="À propos de moi" width={290} height={290} className="rounded-full justify-center mx-auto mb-8 aspect-square object-cover" />
         <p className="py-2 px-12"><span className="font-bold">Je m’appelle Elody Adjei Owusu, psychopraticienne spécialisée </span> en psychothérapie intégrative, neurosciences et régulation émotionnelle. </p>
@@ -21,8 +21,19 @@ export default function Presentation() {
           </p>
         </div>
         <p className="py-2 px-12">Je crois en une psychologie incarnée, à la fois humaine, structurée et exigeante, où la compréhension de soi devient un acte de puissance et de liberté. </p>
-        <p className="py-2 px-12">Chaque séance offre un espace de compréhension, d’observation et de transformation. En identifiant les schémas psychologiques et les réactions automatiques du système nerveux, on apprend à mieux se connaître, à apaiser le mental et à restaurer une stabilité émotionnelle durable. </p>
-        <p className="py-2 px-12">Cet accompagnement s’adresse particulièrement aux personnes sensibles, TDA(H) ou neuro-atypiques, qui se sentent souvent submergées par leurs émotions, leurs pensées ou leur environnement. En combinant psychoéducation, exploration émotionnelle et outils issus des thérapies cognitivo-comportementales (TCC), il aide à déconstruire les automatismes limitants et à renforcer la sécurité intérieure. </p>
+        <p className="py-2 px-12"> <span className="font-bold">Chaque séance offre un espace de compréhension, d’observation et de transformation.</span> En identifiant les schémas psychologiques et les réactions automatiques du système nerveux, on apprend à mieux se connaître, à apaiser le mental et à restaurer une stabilité émotionnelle durable. </p>
+        <p className="py-2 px-12">Cet accompagnement <span className="font-bold">s’adresse particulièrement aux personnes sensibles, TDA(H) ou neuro-atypiques</span> qui se sentent souvent submergées par leurs émotions, leurs pensées ou leur environnement. En combinant psychoéducation, exploration émotionnelle et outils issus des thérapies <span>cognitivo-comportementales (TCC)</span>, il aide à déconstruire les automatismes limitants et à renforcer la sécurité intérieure. </p>
+      </section>
+      <section className="bg-white-custom py-12 px-7">
+        <div className="bg-primary rounded-2xl">
+          <Image src="/approche_1.png" alt="Image de la présentation" width={350} height={193} className="object-cover w-full rounded-t-2xl mb-8" />
+          <div className="px-6">
+          <h1 className="text-3xl font-black text-secondary mb-4">Mon approche</h1>
+          <p className="py-2">Mes premières années de carrière se sont déroulées dans le domaine médical, en radiologie. Cette expérience m’a permis de comprendre en profondeur le fonctionnement du corps, la rigueur du diagnostic, et la complexité du lien entre la santé physique et l’état psychique. Mais au fil du temps, j’ai ressenti qu’il manquait <span className="font-bold"> une dimension essentielle : celle de l’humain intérieur, de la compréhension de ce qui se joue derrière les symptômes visibles.</span> </p>
+          <p className="py-2">C’est ce constat qui m’a conduite à me former à la psychologie, aux <span className="font-bold"> thérapies cognitivo-comportementales (TCC), à la régulation émotionnelle et aux neurosciences.</span> Aujourd’hui, mon approche se veut psychothérapeutique et intégrative, alliant rigueur scientifique et écoute profonde du vécu émotionnel. </p>
+          <p className="pb-[40px]"> <span className="font-bold">Un accompagnement psychothérapeutique et psycho-émotionnel permet de libérer les blocages intérieurs en reliant le corps, le mental et les émotions.</span> Il s’appuie sur les neurosciences, la psychologie et la régulation émotionnelle pour comprendre les mécanismes profonds qui influencent ton état intérieur, tes comportements et ta façon de réagir au monde. </p>
+          </div>
+        </div>
       </section>
       <Footer />
     </div>
