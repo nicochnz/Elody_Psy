@@ -46,7 +46,7 @@ export default function Footer() {
           <h3 className="text-3xl md:text-4xl font-playfair font-black text-white">Mes réseaux</h3>
           <ul className="font-barlow text-white space-y-2">
             <li className="flex md:justify-start gap-2 items-center">
-              <Link href="#" className="flex items-center gap-2 hover:underline transition-all">
+              <Link  href="https://www.instagram.com/elo_psychoflow?igsh=MXdjMXJ4ZWxzam51cA==" target="_blank" className="flex items-center gap-2 hover:underline transition-all">
                 <Image 
                   src="/insta.png" 
                   alt="Instagram" 
