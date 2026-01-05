@@ -9,7 +9,7 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-colors duration-300">
+    <header className="sticky top-0 z-50 w-full transition-colors duration-300 shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
       <div className="flex justify-between items-center px-6 md:px-12 py-4 md:py-6 bg-primary md:bg-white-custom">
         <div className="flex items-center gap-3 md:gap-5">
           <figure className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center bg-white border border-primary/20 shadow-sm shrink-0">
@@ -25,7 +25,7 @@ export default function Header() {
             />
           </figure>
           <div className="flex flex-col">
-            <h1 className="text-lg md:text-2xl font-bold uppercase text-black-custom leading-tight">
+            <h1 className="text-lg md:text-2xl font-black uppercase text-black-custom">
               Psychopraticienne
             </h1>
             <p className="text-[10px] md:text-[13px] font-barlow text-black-custom/80 tracking-widest uppercase">
@@ -36,7 +36,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-16">
           <nav>
-            <ul className="flex gap-8 font-barlow text-[17px] font-semibold text-black-custom">
+            <ul className="flex gap-8 font-barlow text-xl font-medium text-black-custom">
               <li>
                 <Link href="/" className="hover:text-secondary transition-colors">Accueil</Link>
               </li>
@@ -44,7 +44,7 @@ export default function Header() {
                 <Link href="/pages/presentation" className="hover:text-secondary transition-colors">Présentation</Link>
               </li>
               <li>
-                <Link href="/pages/articles" className="hover:text-secondary transition-colors">Articles</Link>
+                <Link href="/pages/blog" className="hover:text-secondary transition-colors">Articles</Link>
               </li>
               <li>
                 <Link href="/pages/tarifs" className="hover:text-secondary transition-colors">Tarifs</Link>
@@ -57,7 +57,7 @@ export default function Header() {
           
           <Link 
             href="/pages/contact" 
-            className="bg-secondary text-white px-8 py-3 rounded-[40px] font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
+            className="bg-secondary text-white px-8 py-5 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-[0_4px_14px_0_rgba(242,106,108,0.39)] active:scale-95"
           >
             Réserver en ligne
           </Link>
@@ -84,7 +84,7 @@ export default function Header() {
               <Link href="/pages/presentation" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Présentation</Link>
             </li>
             <li>
-              <Link href="/pages/articles" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Articles</Link>
+              <Link href="/pages/blog" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Articles</Link>
             </li>
             <li>
               <Link href="/pages/tarifs" onClick={() => setIsMenuOpen(false)} className="hover:text-secondary transition-colors block">Tarifs</Link>
