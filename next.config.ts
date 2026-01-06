@@ -5,9 +5,10 @@ const nextConfig = {
   basePath: isProd ? "/Elody_Psy" : "",
   assetPrefix: isProd ? "/Elody_Psy/" : "",
   images: {
-    unoptimized: true, // <<< Important !
+    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./image-loader.js", // fichier qu’on crée juste en dessous
   },
 };
 
 module.exports = nextConfig;
-
