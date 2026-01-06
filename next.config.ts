@@ -5,10 +5,10 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isProd ? "/Elody_Psy" : "",
-  assetPrefix: isProd ? "/Elody_Psy/" : "", 
-  trailingSlash: true, // Aide GitHub Pages à trouver les fichiers lors de la navigation
+  // assetPrefix n'est pas nécessaire si basePath est bien configuré
+  trailingSlash: true, 
   images: {
-    unoptimized: true,
+    // SURTOUT PAS de unoptimized: true ici, sinon le loader est ignoré
     loader: "custom",
     loaderFile: "./image-loader.js",
   },
