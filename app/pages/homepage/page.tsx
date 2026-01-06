@@ -19,7 +19,7 @@ export default function Homepage() {
           <div className="flex flex-col flex-1 max-w-xl items-center md:items-start text-center md:text-left w-full md:w-auto px-4 md:px-0">
           <div className="w-full max-w-[340px] md:max-w-md mx-auto md:mx-0">
               <h1 className="text-[26px] sm:text-3xl md:text-4xl font-black uppercase text-secondary leading-tight wrap-break-word">
-                Psychopraticienne test
+                Psychopraticienne
               </h1>
               <p className="text-sm md:text-xl font-barlow text-black-custom font-bold mt-2">
                 Neurosciences <span className="mx-2">•</span>Émotion <span className="mx-2">•</span>Créativité
