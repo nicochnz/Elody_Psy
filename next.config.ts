@@ -1,11 +1,13 @@
-import type { NextConfig } from "next";
-const repoName = "Elody_Psy";
-const nextConfig: NextConfig = {
+const isProd = process.env.NODE_ENV === "production";
+
+const nextConfig = {
   output: "export",
-  assetPrefix: `/${repoName}/`,
+  basePath: isProd ? "/Elody_Psy" : "",
+  assetPrefix: isProd ? "/Elody_Psy/" : "",
   images: {
-    unoptimized: true,
+    unoptimized: true, // <<< Important !
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
