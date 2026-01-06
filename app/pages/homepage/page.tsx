@@ -18,10 +18,10 @@ export default function Homepage() {
           </div>
           <div className="flex flex-col flex-1 max-w-xl items-center md:items-start text-center md:text-left w-full md:w-auto px-4 md:px-0">
             <div className="w-full max-w-[340px] md:max-w-md">
-              <h1 className="text-3xl md:text-4xl font-black uppercase text-secondary text-center md:text-left leading-tight">
+              <h1 className="text-3xl  text-center  md:text-4xl font-black uppercase text-secondary md:text-left leading-tight">
                 Psychopraticienne
               </h1>
-              <p className="text-lg md:text-xl font-barlow text-black-custom font-bold mt-2 text-center md:text-left">
+              <p className="text-xs md:text-xl font-barlow text-black-custom font-bold mt-2 text-center md:text-left">
                 Neurosciences <span className="mx-2">•</span>Émotion <span className="mx-2">•</span>Créativité
               </p>
               <p className="py-6 md:py-8 w-full text-justify md:text-left">
