@@ -4,7 +4,7 @@ self.__BUILD_MANIFEST = {
     "beforeFiles": [
       {
         "source": "/Elody_Psy//_next/:path+",
-        "destination": "/_next/:path+"
+        "destination": "/Elody_Psy/_next/:path+"
       }
     ],
     "fallback": []
