@@ -1,13 +1,9 @@
 export default function myLoader({ src }) {
-  // On GitHub Pages, on est en production
-  // Le chemin doit commencer par le nom du dépôt
-  const basePath = "/Elody_Psy";
+  const isProd = process.env.NODE_ENV === "production";
+  const basePath = isProd ? "/Elody_Psy" : "";
   
-  // Si on est en local (localhost), on ne veut pas de préfixe
-  if (typeof window !== "undefined" && window.location.hostname === "localhost") {
-    return src;
-  }
-
-  // Pendant le build (SSR), on ajoute le préfixe
+  // Si l'image est déjà une URL complète, on ne touche à rien
+  if (src.startsWith('http')) return src;
+  
   return `${basePath}${src}`;
 }
