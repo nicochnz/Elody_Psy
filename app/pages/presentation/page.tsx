@@ -57,25 +57,28 @@ export default function Presentation() {
       <figure className="relative w-full h-80 overflow-hidden bg-[url('/banniere_presentation_mobile.png')] bg-cover bg-center">
           <h2 className="flex text-white font-black text-3xl h-full text-center justify-center items-center">Pour quelles raisons consulter ?</h2>
       </figure>
-      <section className="mt-10 px-10">
+      <section className="mt-10 px-10 md:px-44">
         <p className="text-secondary font-bold py-3">Nos modes de vie actuels, la surcharge mentale et la pression émotionnelle sollicitent constamment notre système nerveux. Avec le temps, cela peut entraîner des troubles du sommeil, de la concentration, de l’humeur ou encore une fatigue chronique difficile à identifier. </p>
         <p className="py-3">Un accompagnement psychothérapeutique intégratif permet de mieux comprendre ces déséquilibres, d’en identifier l’origine et de rétablir un fonctionnement plus fluide et harmonieux. </p>
         <p className="">Tu peux envisager une séance si tu : </p>
         <ul className="list-disc py-3">
-          <li>
+          <li className="ml-8 py-3">
           Ressens une fatigue mentale, émotionnelle ou physique persistante, sans cause médicale claire ; 
           </li>
-          <li>Vis des difficultés de concentration, d’attention ou de motivation liées au TDAH ou à une hypersensibilité ; </li>
-          <li>Te sens souvent envahie par tes émotions (angoisse, irritabilité, peur, hyperactivité mentale, impulsivité) ; </li>
-          <li>Répètes des schémas d’auto-sabotage, de surcontrôle ou de perfectionnisme ;
+          <li className="ml-8 py-3">Vis des difficultés de concentration, d’attention ou de motivation liées au TDAH ou à une hypersensibilité ; 
           </li>
-          <li>Souhaites retrouver un équilibre intérieur durable, une clarté mentale et une stabilité émotionnelle. </li>
+          <li className="ml-8 py-3">Te sens souvent envahie par tes émotions (angoisse, irritabilité, peur, hyperactivité mentale, impulsivité) ; 
+          </li>
+          <li className="ml-8 py-3">Répètes des schémas d’auto-sabotage, de surcontrôle ou de perfectionnisme ;
+          </li>
+          <li className="ml-8 py-3">Souhaites retrouver un équilibre intérieur durable, une clarté mentale et une stabilité émotionnelle. 
+          </li>
             </ul>
             <p className="py-3">Chaque séance, d’une durée d’une heure, est un temps pour ralentir, comprendre et transformer. À travers des outils issus des neurosciences, de la psychologie et des thérapies cognitivo-comportementales (TCC), je t’accompagne dans la régulation du système nerveux, la gestion émotionnelle et la reconstruction de ton équilibre psychique. </p>
             <p className="py-3">L’objectif est de t’aider à retrouver ton axe intérieur : un espace où le corps, le mental et les émotions se répondent enfin, dans un état de stabilité et de sécurité durable. </p>
             <Link 
                 href="/pages/contact" 
-                className="bg-secondary text-white px-8 py-4 rounded-[40px] font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8"
+                className="bg-secondary text-white px-8 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:w-fit md:h-auto md:px-10  md:mx-auto md:py-6 md:text-lg"
               >
                 Réserver en ligne
               </Link>
