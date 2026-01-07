@@ -48,7 +48,7 @@ export default function Footer() {
             <li className="flex md:justify-start gap-2 items-center">
               <Link  href="https://www.instagram.com/elo_psychoflow?igsh=MXdjMXJ4ZWxzam51cA==" target="_blank" className="flex items-center gap-2 hover:underline transition-all">
                 <Image 
-                  src="/insta.png" 
+                  src="/insta.svg" 
                   alt="Instagram" 
                   width={20} 
                   height={20} 
@@ -60,7 +60,7 @@ export default function Footer() {
             <li className="flex md:justify-start gap-2 items-center">
               <Link href="#" className="flex items-center gap-2 hover:underline transition-all">
                 <Image 
-                  src="/podcast.png" 
+                  src="/podcast.svg" 
                   alt="Mes podcasts" 
                   width={20} 
                   height={20} 
