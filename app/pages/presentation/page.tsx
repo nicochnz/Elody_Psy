@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Presentation() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (process.env.GITHUB_ACTIONS ? "/Elody_Psy" : "");
+  const bannerUrl = `${basePath}/banniere_presentation_mobile.png`;
+
   return (
     <div>
       <Header />
@@ -91,7 +94,11 @@ export default function Presentation() {
         </div>
       </section>
 
-      <figure id="reasons" className="relative w-full h-80 overflow-hidden bg-[url('/banniere_presentation_mobile.png')] bg-cover bg-center">
+      <figure
+        id="reasons"
+        className="relative w-full h-80 overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${bannerUrl})` }}
+      >
         <h2 className="flex text-white font-black text-3xl h-full text-center justify-center items-center">
           Pour quelles raisons consulter ?
         </h2>
