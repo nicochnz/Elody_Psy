@@ -1,12 +1,9 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "@/app/components/footer";
-import Header from "@/app/components/header";
 export default function Homepage() {
   return (
     <main>
-      <Header />
       <section className="bg-primary w-full h-auto md:h-[600px] py-8 md:py-0">
         <div className="flex flex-col md:flex-row w-full h-full items-start md:items-center justify-center md:justify-between px-6 md:px-36 gap-6 md:gap-0">
           <div className="flex justify-center w-full md:hidden mb-4">
@@ -163,7 +160,6 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
