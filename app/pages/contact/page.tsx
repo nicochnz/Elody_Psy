@@ -46,13 +46,13 @@ export default function Contact() {
       </section>
 
       <section className="bg-white-custom py-12 px-7 md:py-24 md:px-20">
-        <div className="bg-primary rounded-2xl overflow-hidden flex flex-col md:flex-row max-w-7xl mx-auto min-h-[548px]">
-          <div className="relative w-full md:w-[30%] h-64 md:h-auto">
+        <div className="bg-primary rounded-2xl overflow-hidden flex flex-col md:flex-row-reverse max-w-7xl mx-auto min-h-[548px]">
+          <div className="relative w-full md:w-[40%] h-64 md:h-auto">
             <Image
               src="/call_discovery.png"
               alt="Image de l'appel découverte"
               fill
-              className="object-cover"
+              className="object-cover "
             />
           </div>
 
@@ -67,42 +67,49 @@ export default function Contact() {
               <p className="py-2">Pour obtenir un rendez-vous, veuillez remplir le formulaire de prise de contact et je vous recontacterais pour choisir ensemble un rendez-vous de 20 minutes.</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col">
-              <h3 className="font-barlow font-medium py-4">Nom</h3>
-              <input
-                type="text"
-                value={nom}
-                onChange={(e) => setNom(e.target.value)}
-                required
-                className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4"
-              />
+            <form onSubmit={handleSubmit} className="flex flex-col md:gap-4">
+              <div className="w-full flex flex-col md:flex-row gap-0 md:gap-4">
+                <div className="w-full md:w-1/2">
+                  <h3 className="font-barlow font-medium py-4">Nom</h3>
+                  <input
+                    type="text"
+                    value={nom}
+                    onChange={(e) => setNom(e.target.value)}
+                    required
+                    className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4"
+                  />
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="font-barlow font-medium py-4">Prénom</h3>
+                  <input
+                    type="text"
+                    value={prenom}
+                    onChange={(e) => setPrenom(e.target.value)}
+                    required
+                    className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4"
+                  />
+                </div>
+              </div>
 
-              <h3 className="font-barlow font-medium py-4">Prénom</h3>
-              <input
-                type="text"
-                value={prenom}
-                onChange={(e) => setPrenom(e.target.value)}
-                required
-                className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4"
-              />
-
-              <h3 className="font-barlow font-medium py-4">Numéro de téléphone</h3>
-              <input
-                type="tel"
-                value={telephone}
-                onChange={(e) => setTelephone(e.target.value)}
-                placeholder="10 chiffres"
-                className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4"
-                required
-                pattern="[0-9]{10}"
-                title="Veuillez entrer un numéro de téléphone valide"
-              />
+              <div className="w-full">
+                <h3 className="font-barlow font-medium py-4">Numéro de téléphone</h3>
+                <input
+                  type="tel"
+                  value={telephone}
+                  onChange={(e) => setTelephone(e.target.value)}
+                  placeholder=""
+                  className="w-full p-2 border border-black-custom rounded-2xl bg-white-custom py-4 md:mb-4"
+                  required
+                  pattern="[0-9]{10}"
+                  title="Veuillez entrer un numéro de téléphone valide"
+                />
+              </div>
 
               {error && <p className="text-red-500 text-sm pt-2">{error}</p>}
 
               <button
                 type="submit"
-                className="bg-secondary text-white px-6 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:w-fit md:h-auto md:px-10 md:mx-auto md:py-6 md:text-lg cursor-pointer"
+                className="bg-secondary text-white px-6 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:m-0 md:w-fit md:h-auto md:px-12 md:py-6 md:text-lg cursor-pointer"
               >
                 Valider
               </button>
