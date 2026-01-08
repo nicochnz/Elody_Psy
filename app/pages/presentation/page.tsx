@@ -13,7 +13,8 @@ export default function Presentation() {
     <div>
       <Header />
       <section className="bg-primary py-12 md:px-44">
-        <h1 className="text-3xl font-black text-secondary py-8 text-center uppercase md:text-left">
+        <div className="max-w-[1440px]">
+        <h1 className="text-3xl font-black text-secondary py-8 text-center uppercase md:text-left ">
           À propos de moi
         </h1>
         <Image
@@ -21,7 +22,7 @@ export default function Presentation() {
           alt="À propos de moi"
           width={290}
           height={290}
-          className="rounded-full justify-center mx-auto mb-8 aspect-square object-cover md:w-[1200px] md:h-[500px] md:rounded-lg"
+          className="rounded-full justify-center mx-auto mb-8 aspect-square object-cover md:w-[1440px] md:h-[500px] md:rounded-lg"
         />
         <p className="py-2 px-12 md:px-0">
           <span className="font-bold">Je m’appelle Elody Adjei Owusu, psychopraticienne spécialisée </span> 
@@ -58,6 +59,7 @@ export default function Presentation() {
           Cet accompagnement <span className="font-bold">s’adresse particulièrement aux personnes sensibles, TDA(H) ou neuro-atypiques</span> qui se sentent souvent submergées par leurs émotions, leurs pensées ou leur environnement. 
           En combinant psychoéducation, exploration émotionnelle et outils issus des thérapies <span>cognitivo-comportementales (TCC)</span>, il aide à déconstruire les automatismes limitants et à renforcer la sécurité intérieure.
         </p>
+        </div>
       </section>
 
       <section id="approche" className="bg-white-custom py-12 px-7 md:py-24 md:px-20">
@@ -145,6 +147,7 @@ export default function Presentation() {
           Réserver en ligne
         </Link>
       </section>
+      
       <Footer />
     </div>
   );

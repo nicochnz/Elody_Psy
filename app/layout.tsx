@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${barlow.variable} antialiased`}
       >
-        {children}
+        <div>{children}</div>
       </body>
     </html>
   );

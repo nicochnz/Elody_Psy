@@ -8,7 +8,7 @@ export default function Homepage() {
     <main>
       <Header />
       <section className="bg-primary w-full h-auto md:h-[600px] py-8 md:py-0">
-        <div className="flex flex-col md:flex-row w-full h-full items-start md:items-center justify-center md:justify-between px-6 md:px-36 gap-6 md:gap-0">
+        <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row w-full h-full items-start md:items-center justify-center md:justify-between px-6 md:px-36 gap-6 md:gap-0">
           <div className="flex justify-center w-full md:hidden mb-4">
             <Image
               src="/first_home.png"
