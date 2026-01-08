@@ -12,18 +12,18 @@ export default function Footer() {
               <Link href="/pages/presentation" className="hover:underline transition-all">Qui suis-je ?</Link>
             </li>
             <li>
-              <Link href="/pages/presentation" className="hover:underline transition-all">Dans quels cas consulter ?</Link>
+              <Link href="/pages/presentation#reasons" className="hover:underline transition-all">Dans quels cas consulter ?</Link>
             </li>
             <li>
-              <Link href="/pages/presentation" className="hover:underline transition-all">Mon approche</Link>
+              <Link href="/pages/presentation#approche" className="hover:underline transition-all">Mon approche</Link>
             </li>
           </ul>
         </div>
         <div className="flex flex-col gap-4 flex-1 w-full">
           <h3 className="text-3xl md:text-4xl font-playfair font-black text-white">À propos</h3>
           <ul className="font-barlow text-white space-y-2">
-            <li>
-              <Link href="/pages/tarifs" className="hover:underline transition-all">Tarifs</Link>
+          <li>
+              <Link href="/pages/homepage#tarifs" className="hover:underline transition-all">Tarifs</Link>
             </li>
             <li>
               <Link href="/pages/contact" className="hover:underline transition-all">Mentions légales</Link>

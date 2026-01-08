@@ -1,10 +1,12 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-
+import Footer from "@/app/components/footer";
+import Header from "@/app/components/header";
 export default function Homepage() {
   return (
     <main>
+      <Header />
       <section className="bg-primary w-full h-auto md:h-[600px] py-8 md:py-0">
         <div className="flex flex-col md:flex-row w-full h-full items-start md:items-center justify-center md:justify-between px-6 md:px-36 gap-6 md:gap-0">
           <div className="flex justify-center w-full md:hidden mb-4">
@@ -105,7 +107,7 @@ export default function Homepage() {
         </section>
       </div>
 
-      <section className="bg-primary w-full py-16 mx-auto">
+      <section id="tarifs" className="bg-primary w-full py-16 mx-auto">
         <h1 className="text-3xl font-black text-secondary py-8 text-center">Prestations et tarifs</h1>
         <div className="max-w-2xl mx-auto flex flex-col gap-1 mb-8 px-4 md:px-0">
           <div className="bg-white-custom rounded-tl-lg rounded-tr-lg p-6 flex justify-between items-center">
@@ -125,7 +127,7 @@ export default function Homepage() {
             Réserver en ligne
           </Link>
           <Link 
-            href="/pages/tarifs"
+            href="/pages/presentation"
             className="bg-white-custom hover:bg-white-custom/80 text-black-custom w-[202px] h-[62px] md:w-fit md:h-auto md:px-8 md:py-6 rounded-full font-barlow text-base md:text-lg font-bold transition-all whitespace-nowrap active:scale-95 cursor-pointer flex items-center justify-center"
           >
             En savoir plus
@@ -161,6 +163,7 @@ export default function Homepage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
