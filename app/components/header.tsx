@@ -47,7 +47,7 @@ export default function Header() {
                 <Link href="/pages/blog" className="hover:text-secondary transition-colors">Articles</Link>
               </li>
               <li>
-                <Link href="/pages/tarifs" className="hover:text-secondary transition-colors">Tarifs</Link>
+                <Link href="/pages/homepage#tarifs" className="hover:text-secondary transition-colors">Tarifs</Link>
               </li>
               <li>
                 <Link href="/pages/contact" className="hover:text-secondary transition-colors">Contact</Link>
