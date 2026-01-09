@@ -4,6 +4,7 @@ import { useState, FormEvent } from "react";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Contact() {
   const [nom, setNom] = useState("");
@@ -116,6 +117,29 @@ export default function Contact() {
             </form>
           </div>
         </div>
+      </section>
+      <section className="bg-primary py-12 px-7">
+      <h2 className="text-2xl text-center md:text-4xl font-black text-secondary mb-6">Retrouvez moi sur mes réseaux sociaux</h2>
+          <p className="text-center tracking-tight">
+          <span className="font-bold">Retrouve-moi sur Instagram @elo_psychoflow</span>, où je partage des tips et conseils du quotidien autour du burn-out et du TDAH.
+          </p>
+            <Image src="/instagram.svg" alt="Instagram" width={100} height={100} className="mx-auto py-8" />
+            <Link 
+          href="https://www.instagram.com/elo_psychoflow?igsh=MXdjMXJ4ZWxzam51cA==" target="_blank" 
+          className="bg-secondary text-white px-8 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:w-fit md:h-auto md:px-10 md:mx-auto md:py-6 md:text-lg"
+        >
+         Aller sur Instagram
+        </Link>
+        <p className="text-center tracking-tight">
+        Si la santé mentale t’intrigue (ou te traverse), <span className="font-bold">viens plonger Sous la surface sur Spotify.</span> Podcast honnête, profond, humain.
+        </p>
+        <Image src="/Headphones.svg" alt="podcast" width={100} height={100} className="mx-auto py-8" />
+        <Link 
+          href="https://open.spotify.com/show/6X90l1JlK00000000000000000000000?si=6X90l1JlK00000000000000000000000" target="_blank" 
+          className="bg-secondary text-white px-8 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:w-fit md:h-auto md:px-10 md:mx-auto md:py-6 md:text-lg"
+        >
+         Aller sur Spotify
+        </Link>
       </section>
       <Footer />
     </div>
