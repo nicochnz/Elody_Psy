@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex items-center gap-3 md:gap-5">
           <figure className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center bg-white border border-primary/20 shadow-sm shrink-0">
             <Image 
-              src="/test_logo.jpg" 
+              src="/logo.svg" 
               alt="Logo Elody" 
               width={64} 
               height={64}
