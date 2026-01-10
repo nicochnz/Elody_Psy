@@ -27,7 +27,7 @@ export default function Contact() {
       `Bonjour, je suis intéressé(e) par l'appel découverte, je m'appelle ${nom} ${prenom} et mon numéro de téléphone est le ${telephone}.`
     );
 
-    window.location.href = `mailto:test@test.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:elody.adjei33@live.fr?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -123,7 +123,7 @@ export default function Contact() {
           <p className="text-center tracking-tight">
           <span className="font-bold">Retrouve-moi sur Instagram @elo_psychoflow</span>, où je partage des tips et conseils du quotidien autour du burn-out et du TDAH.
           </p>
-            <Image src="/instagram.svg" alt="Instagram" width={100} height={100} className="mx-auto py-8" />
+            <Image src="/Instagram.svg" alt="Instagram" width={100} height={100} className="mx-auto py-8" />
             <Link 
           href="https://www.instagram.com/elo_psychoflow?igsh=MXdjMXJ4ZWxzam51cA==" target="_blank" 
           className="bg-secondary text-white px-8 py-4 rounded-full font-barlow text-lg font-bold hover:bg-secondary/90 transition-all shadow-md block text-center m-8 md:w-fit md:h-auto md:px-10 md:mx-auto md:py-6 md:text-lg"
